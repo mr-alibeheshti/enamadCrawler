@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "1e64eda6-cd4c-4d39-a89d-2ac29318730a",
+		"name": "enamd-crawler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36567888"
+	},
+	"item": [
+		{
+			"name": "filters",
+			"item": [
+				{
+					"name": "Of City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/?city=تهران",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "تهران"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Of Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/?name=یوپ شاپ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "یوپ شاپ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Of Stars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/?stars=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "stars",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Of ExpirationDate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/?expirationDate=1404/10/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "expirationDate",
+									"value": "1404/10/13"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Of Domain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/?domain=yopshop.ir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "domain",
+									"value": "yopshop.ir"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Websites Per Star",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/websitesperstar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"websitesperstar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Websites Per City",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/websitesperCITY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"websitesperCITY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export Csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1/export-csv?fields=domain,stars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"export-csv"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "domain,stars"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
